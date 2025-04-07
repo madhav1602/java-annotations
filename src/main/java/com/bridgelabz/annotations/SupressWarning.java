@@ -6,7 +6,7 @@ public class SupressWarning {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
-        List list = new ArrayList();
+        List list = new ArrayList<>();
         list.add("Java");
         list.add(101);
         list.add(true);

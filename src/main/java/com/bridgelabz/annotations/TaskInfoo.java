@@ -21,7 +21,7 @@ class TaskManager{
         System.out.println("feedback");
     }
 }
-public class TaskInfoo {
+public class TaskInfoo{
     public static void main(String[] args) {
         Class<TaskManager> cls=TaskManager.class;
         Method[] methods=cls.getDeclaredMethods();

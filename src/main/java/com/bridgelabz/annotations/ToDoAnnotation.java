@@ -2,15 +2,15 @@ package com.bridgelabz.annotations;
 import java.lang.annotation.*;
 import java.lang.reflect.*;
 
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-@interface Todo {
+ @interface Todo {
     String task();
     String assignedTo();
     String priority() default "MEDIUM";
     String status() default "Completed";
 }
-
 
 class Taskss {
 
@@ -24,14 +24,13 @@ class Taskss {
 
     }
 
-    @Todo(task = "Order", assignedTo = "Dhruv", priority = "LOW", status = "Pending")
+    @Todo(task = "Order", assignedTo = "Dhruv", priority = "LOW")
     public void order() {
 
     }
 }
-
 public class ToDoAnnotation {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         Class<?> cls=Taskss.class;
         Method[] methods=cls.getDeclaredMethods();
 
